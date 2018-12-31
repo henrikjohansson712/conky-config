@@ -40,7 +40,8 @@ conky.text = [[
 ${font Font Awesome 5 Free Solid:size=16} ${font Fira Sans:bold:size=16}System $hr
    
       ${font Font Awesome 5 Free Regular:size=16} ${font}Name: $alignr$nodename
-   ${offset 2}${font Font Awesome 5 Free Solid:size=16} ${font}${offset 2}IP: $alignr${addr wlp2s0}
+   ${offset 2}${font Font Awesome 5 Free Solid:size=16} ${font}${offset 2}Local IP: $alignr${addr wlp2s0}
+   ${offset 2}${font Font Awesome 5 Free Solid:size=16} ${font}${offset 2}Public IP: $alignr${execi 60 curl https://icanhazip.com/}
    ${font StyleBats:size=17}I ${font}Kernel: $alignr$kernel
    ${font Font Awesome 5 Free Regular:size=16} ${font}Uptime: $alignr$uptime
  
