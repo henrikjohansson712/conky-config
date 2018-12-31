@@ -72,10 +72,9 @@ ${font Font Awesome 5 Free Solid:size=16} ${font Fira Sans:bold:size=16}File 
 
 ${font Font Awesome 5 Free Solid:size=16} ${font Fira Sans:bold:size=16}Wifi $hr
 
-      ${offset 1}${font StyleBats:size=17}Q ${font}${offset -2}Connected to:$alignr${wireless_essid wlp2s0}
-   ${font Font Awesome 5 Free Solid:size=16} ${font}Bitrate: $alignr${wireless_bitrate wlp2s0}
+      ${offset 1}${font Font Awesome 5 Free Solid:size=16} ${font}${offset -2}Connected to:$alignr${wireless_essid wlp2s0}
    ${font Font Awesome 5 Free Solid:size=14} ${font}Signal: ${wireless_link_qual_perc wlp2s0}% ${wireless_link_bar 10 wlp2s0}
-
+   ${font Pizzadude Bullets:size=16}M ${font}Up: ${upspeed wlp2s0}/s ${alignr}${font Pizzadude Bullets:size=16}S ${font}Down: ${downspeed wlp2s0}/s
 
 ${font Font Awesome 5 Free Solid:size=16} ${font Fira Sans:bold:size=16}Battery $hr
    $font$alignr${battery_time BAT1}
